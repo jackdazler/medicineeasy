@@ -12,19 +12,19 @@ const CpNavBarDesk = () => {
               </div>
             </div>
             <div className={styleNav["rhs-wrap"]}>
-              <div className={styleNav['nav-link']}>
-                <ul className={styleNav['nav-items']}>
-                  <li className={styleNav['nav-item']}>Shop</li>
-                  <li className={styleNav['nav-item']}>Learn</li>
-                  <li className={styleNav['nav-item']}>Support</li>
-                  <li className={styleNav['nav-item']}>Radio</li>
+              <div className={styleNav["nav-link"]}>
+                <ul className={styleNav["nav-items"]}>
+                  <li className={`${styleNav["nav-item"]}} `}>Shop</li>
+                  <li className={styleNav["nav-item"]}>Learn</li>
+                  <li className={styleNav["nav-item"]}>Support</li>
+                  <li className={styleNav["nav-item"]}>Radio</li>
                 </ul>
               </div>
               <div className={`${styleNav["act-link"]}`}>
-              <div className={`${styleNav["account"]} icon-account`}></div>
-              <div className={`${styleNav["search"]} icon-search`}></div>
-              <div className={`${styleNav["cart"]} icon-cart`}></div>
-              <div className={`${styleNav["menu"]} icon-menu`}></div>
+                <div className={`${styleNav["account"]} icon-account`}></div>
+                <div className={`${styleNav["search"]} icon-search`}></div>
+                <div className={`${styleNav["cart"]} icon-cart`}></div>
+                <div className={`${styleNav["menu"]} icon-menu`}></div>
               </div>
             </div>
           </div>

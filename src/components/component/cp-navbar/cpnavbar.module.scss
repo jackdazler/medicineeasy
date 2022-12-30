@@ -3,7 +3,7 @@
 .cp-navbar {
   width: 100%;
   background-color: $clr-base;
-  z-index:1;
+  z-index: 1;
   color: $clr-root;
   height: 11.5rem;
   box-shadow: 0px 1px rgb(224, 224, 224);
@@ -41,45 +41,57 @@
       font-family: $font-medium;
       justify-content: space-between;
       flex: 0.8rem;
-      .nav-link{
+      .nav-link {
         font-size: 1.8rem;
         align-items: center;
         justify-content: center;
         margin-left: 30rem;
-        .nav-items{
+        text-transform: capitalize;
+        .nav-items {
           display: flex;
-     
-          .nav-item{
-           margin: 0  3rem;
+
+          .nav-item {
+            margin: 0 3rem;
             cursor: pointer;
+          }
+          li:nth-child(n) {
+            &:hover {
+              color: $clr-bg;
+            }
           }
         }
         @media only screen and (max-width: $media-sm) {
           display: none;
         }
       }
-      .act-link{
-      display: flex;
-      justify-content: space-between;
-      flex: 0.3;
-      cursor: pointer;
-      @media only screen and (max-width: $media-sm) {
-        font-size: 2.1rem;
-        flex: 0.5;
+      .act-link {
+        display: flex;
         justify-content: space-between;
-        margin-left: auto;
-      }
-      .menu{
-        display: none;
+        flex: 0.3;
+        cursor: pointer;
+        div:nth-child(n) {
+          &:hover {
+            color: $clr-bg;
+          }
+        }
         @media only screen and (max-width: $media-sm) {
-          display: block;
+          font-size: 2.1rem;
+          flex: 0.5;
+          justify-content: space-between;
+          margin-left: auto;
+  
+        }
+        .menu {
+          display: none;
+          @media only screen and (max-width: $media-sm) {
+            display: block;
+          }
         }
       }
     }
   }
-  }
-  &:hover{
-  background-color: $clr-root;
-   color: $clr-base;
+  &:hover {
+    background-color: $clr-root;
+    color: $clr-base;
   }
 }
