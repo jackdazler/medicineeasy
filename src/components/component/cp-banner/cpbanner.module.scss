@@ -1,0 +1,41 @@
+@import '../../../styles/globalSass/variable.scss';
+
+.cp-banner {
+    position: relative;
+    height: 100vh;
+    top:-12rem;
+    @media only screen and (max-width : $media-sm) {
+        margin-top: -10rem;
+        height: 49.1rem;
+    }
+    .video-banner-wrap {
+        position: relative;
+        .banner-title {
+            position: absolute;
+            color: $clr-root;
+            top: 20rem;
+            font-family: $font-medium;
+            font-size: 9.6rem;
+            display: block;
+            max-width: 1rem;
+            @media only screen and (max-width : $media-sm) {
+                top: 23rem;
+                font-size: 5.4rem;
+                letter-spacing: -1px;
+                line-height: 7rem;
+            }
+        }
+
+        .act-wrap {
+            position: absolute;
+            top: 46rem;
+            height: 3.8rem;
+            height: 3.8rem;
+            @media only screen and (max-width : $media-sm) {
+                top: 38rem;
+            }
+            
+        }
+    }
+
+}

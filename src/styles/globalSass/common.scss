@@ -70,3 +70,27 @@ p{
 }
 
 
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid $clr-root;
+    border-radius: 50px;
+    padding: 2.8rem 8rem;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    color: $clr-root;
+    font-family: $font-medium;
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 2.4rem;
+    @media only screen and (max-width: $media-sm){
+    border: 1px solid $clr-root;
+    font-size: 1.6rem;
+        padding: 1rem 2.8rem;
+    }
+    &:hover{
+        color: lightgray;
+        border-color: lightgray;
+    }
+
+}

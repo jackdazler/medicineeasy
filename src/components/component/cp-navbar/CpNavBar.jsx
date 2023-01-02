@@ -14,7 +14,7 @@ const CpNavBarDesk = () => {
             <div className={styleNav["rhs-wrap"]}>
               <div className={styleNav["nav-link"]}>
                 <ul className={styleNav["nav-items"]}>
-                  <li className={`${styleNav["nav-item"]}} `}>Shop</li>
+                  <li className={`${styleNav["nav-item"]}}`}>Shop</li>
                   <li className={styleNav["nav-item"]}>Learn</li>
                   <li className={styleNav["nav-item"]}>Support</li>
                   <li className={styleNav["nav-item"]}>Radio</li>
