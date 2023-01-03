@@ -1,0 +1,30 @@
+@import '../../../styles/globalSass/variable.scss';
+.review-wrap{
+    position: relative;
+    .brand-wrap{
+        position: relative;
+        width: 28.6rem;
+        height: 3.6rem;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .comments{
+        margin-top: 2rem;
+        overflow: hidden;
+        height: 12rem;
+        .comment{
+        font-size: 2.1rem;
+        color: gray;
+        font-family: $font-medium;
+        line-height: 3rem;
+        text-align: left;
+        overflow: hidden;
+        letter-spacing: normal;
+         @media only screen and (max-width: $media-sm){
+            font-size: 1.6rem;
+            line-height: 2rem;
+            padding: 0 1rem;
+         }
+        }
+    }
+}

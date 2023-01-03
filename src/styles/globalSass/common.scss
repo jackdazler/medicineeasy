@@ -1,71 +1,83 @@
-
 @import 'variable.scss';
-*{
+
+* {
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 10px;
-    @media(min-width: 992px) and (max-width:1200px){
+
+    @media(min-width: 992px) and (max-width:1200px) {
         font-size: 8.2px;
     }
-    @media(min-width: 1279px) and (max-width:1440px){
+
+    @media(min-width: 1279px) and (max-width:1440px) {
         font-size: 8.9px;
     }
-    @media(min-width: 1600px){
+
+    @media(min-width: 1600px) {
         font-size: 12.4px;
     }
 }
 
-body{
-font-family: $font-regular;
-background: $clr-root;
-color: $clr-base;
-overflow-x: hidden;
-position: relative;
-scrollbar-gutter: initial;
-width: 100%;
-&::-webkit-scrollbar{
-    width: 1rem;
-}
-/*track */
-&::-webkit-scrollbar-track{
+body {
+    font-family: $font-regular;
     background: $clr-root;
+    color: $clr-base;
+    overflow-x: hidden;
+    position: relative;
+    scrollbar-gutter: initial;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    /*track */
+    &::-webkit-scrollbar-track {
+        background: $clr-root;
+    }
+
+    /*handle */
+    &::-webkit-scrollbar-thumb {
+        background: $clr-primary;
+        opacity: 0.8;
+    }
+
+    /* handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        opacity: 1;
+    }
 }
-/*handle */
-&::-webkit-scrollbar-thumb{
-    background:$clr-primary;
-    opacity: 0.8;
-}
-/* handle on hover */
-&::-webkit-scrollbar-thumb:hover{
-    opacity: 1;
-}
-}
-img{
+
+img {
     width: 100%;
     display: block;
 }
-a{
+
+a {
     transform: all 0.2s;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
         text-decoration: none;
     }
 }
 
-p{
+p {
     font-size: 1.6rem;
     line-height: 2rem;
     font-family: $font-regular;
     color: $clr-base;
 }
-.container{
+
+.container {
     margin: 0 auto;
     padding: 0;
     width: 83%;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
@@ -83,12 +95,14 @@ p{
     text-align: center;
     letter-spacing: -1px;
     font-size: 2.4rem;
-    @media only screen and (max-width: $media-sm){
-    border: 1px solid $clr-root;
-    font-size: 1.6rem;
+
+    @media only screen and (max-width: $media-sm) {
+        border: 1px solid $clr-root;
+        font-size: 1.6rem;
         padding: 1rem 2.8rem;
     }
-    &:hover{
+
+    &:hover {
         color: lightgray;
         border-color: lightgray;
     }

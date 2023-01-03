@@ -1,0 +1,55 @@
+@import "../../../styles/globalSass/variable.scss";
+.bs-swiper {
+  padding: 0 18rem;
+  height: 31.8rem;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: $media-sm) {
+    width: 100%;
+    padding: unset;
+  }
+  .swiper-slide {
+    width: 58.6rem !important;
+    height: 31.8rem;
+    padding: 4.8rem 0;
+    align-items: center;
+    justify-content: center;
+    position: unset;
+    margin: 0 20rem;
+    @media only screen and (max-width: $media-sm) {
+      padding: unset;
+      width: 100% !important;
+      margin: unset;
+      align-items: center;
+    }
+  }
+  .swiper-pagination-horizontal.swiper-pagination-bullets {
+    bottom: 5rem;
+    @media only screen and (max-width: $media-sm) {
+      bottom: 10rem;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $clr-bg;
+    opacity: 1;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    @media only screen and (max-width: $media-sm) {
+      display: none;
+    }
+    &::after {
+      font-family: "icomoon";
+      content: "\e904";
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      color: $clr-bg;
+      transform: rotate(45deg);
+    }
+  }
+  .swiper-button-prev {
+    &::after {
+      transform: rotate(-135deg);
+    }
+  }
+}
