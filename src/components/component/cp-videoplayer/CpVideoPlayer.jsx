@@ -15,6 +15,7 @@ const CpVideoPlayer = (props) => {
     muted:true,
     sources: [{
         src:"https://media.sonos.com/videos/znqtjj88/production/ac52e0abee7c40598065c62045b445d59798a653-bg-720p.av1",
+        // src:"https://media.sonos.com/videos/znqtjj88/production/e4ffa9cd65442d59f07af59cc730003ded8c327c-bg-360p.mp4",
       type: 'video/mp4',
     }]
   };
